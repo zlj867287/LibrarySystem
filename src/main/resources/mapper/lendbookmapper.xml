@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//library.mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="library.mapper.LendBookMapper">
+
+        <update id="updatebookpower" parameterType="int" >
+            update book set statement=#{statement},number=#{number} where bookid=#{bookid}
+        </update>
+       <insert id="insertRelation" parameterType="Relation" >
+        insert into relation (adminid,bookid,readerid,lendtime) values (#{adminid},#{bookid},#{readerid},#{lendtime})
+      </insert>
+    <select id="selectRelationByReaderid" parameterType="int" resultType="Relation">
+        select * from relation where readerid=#{readerid}
+    </select>
+
+    <select id="findAllrelationByRelationId" parameterType="int" resultType="Relation">
+        select * from relation where readerid=#{readerid}
+    </select>
+
+
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/library" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/library/controller/LendController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/library/controller/UserController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/library/entity/User.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/library/mapper/UserMapper.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/bookmapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/lendbookmapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/readermapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/mapper/returnbookmapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/service/lendbook/booklend.ftl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/static/js" charset="UTF-8" />
+  </component>
+</project>
