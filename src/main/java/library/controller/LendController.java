@@ -58,8 +58,8 @@ public class LendController {
         }*/
         //多表查询，根据relation中readerid的值取bookid，在根据bookid在book中取得book的所有信息
         List<Book> lendBooks= bookService.findAllBookByRelationId(readerid);
-        List<Relation> relations=lendBookMapper.findAllrelationByRelationId(readerid);
-        showBookData.put("relations", relations);
+        //List<Relation> relations=lendBookMapper.findAllrelationByRelationId(readerid);
+        //showBookData.put("relations", relations);
         showBookData.put("lendBooks", lendBooks);
         showBookData.put("adminid", adminid);
         if(lendBooks.size()>5){

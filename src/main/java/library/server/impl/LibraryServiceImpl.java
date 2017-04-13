@@ -28,9 +28,9 @@ public class LibraryServiceImpl implements LibraryService {
 
 
     public boolean lendBook(int readerid, int bookid, int adminid) {
-
-        Relation relation = new Relation(adminid, bookid , readerid,new Date(),new Date(),"0");
         //insert into relation (adminid,bookid,readerid,lendtime) values (#{adminid},#{bookid},#{readerid},#{lendtime})
+        Relation relation = new Relation(adminid, bookid , readerid,new Date(),new Date(),"0");
+
         int t = lendBookDao.insertRelation(relation);
 
         int t1 = bookDao.updateBookLendNum(bookid);

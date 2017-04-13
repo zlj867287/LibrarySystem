@@ -66,7 +66,7 @@
         <th>bookname</th>
         <th>classification</th>
         <th>number</th>
-        <th>give</th>
+        <th>giveback</th>
     </tr>
     </thead>
     <tbody>
@@ -76,8 +76,8 @@
         <label> 图书编号: <input type="text" name="bookid" id="bookid" /> </label>
         </form>
         <button onclick="lendBook()" id="button">借阅图书</button>
-         <!--<#else><input id="info" value = "借阅图书已经达到上限了"></#if>跟下面的两种方式可以做对比-->
-        <input id="info" value = "借阅图书已经达到上限了">
+        <#else><input id="info" value = "借阅图书已经达到上限了"></#if>
+            <!-- <input id="info" value = "借阅图书已经达到上限了">跟下面的两种方式可以做对比-->
 
     <#list lendBooks as book>
         <tr id="<#if (book.bookid)??>${(book.bookid)}<#else>""</#if>">
@@ -108,7 +108,6 @@
 
     <#list relations as relation>
 
-    <!--<tr id="<#if (relation.bookid)??>${(relation.bookid)}<#else>""</#if>">-->
       <!--<tr id="<#if (relation.bookid)??>${(relation.bookid)}<#else>""</#if>">-->
         <td><#if (relation.adminid)??>${(relation.adminid)}<#else>""</#if></td>
         <td><#if (relation.bookid)??>${(relation.bookid)}<#else>""</#if></td>

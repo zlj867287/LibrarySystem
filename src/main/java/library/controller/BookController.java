@@ -37,6 +37,7 @@ public class BookController {
         showBookData.put("books", books);
         return new ModelAndView("book/allbook", showBookData);
 
+
     }
 
     @RequestMapping(value = "/pagebook", method = RequestMethod.GET)
@@ -77,7 +78,7 @@ public class BookController {
     @RequestMapping(value = "/addbook", method = RequestMethod.POST)
     public String addBookPOST(Book book) throws IOException, SQLException {
         boolean result = bookService.addBook(book);
-        //下面两种返回方法多比较
+        //下面两种返回方法多比较,redirect重定向作用
         return "redirect:/book/allbook";
         /*if(result){
             return "redirect:/book/allbook";
@@ -86,7 +87,7 @@ public class BookController {
         }*/
     }
 
-    //删除book用户信息，用ajex
+    //删除book用户信息，使用了jquery和ajax实现了动态刷新网页的功能减轻后台的数据压力
     @RequestMapping(value = "deletebook", method = RequestMethod.POST)
     @ResponseBody
     public Map<String,String> deleteBookGET(int bookid) throws IOException, SQLException {
